@@ -13,7 +13,7 @@ mongoose.connect(process.env.MONGO)
         console.log('Connected to MongoDB');
     })
     .catch((err) => {
-        console.error('Failed to connect to MongoDB', err);
+        console.error(err);
     });
 
 const __dirname = path.resolve();
@@ -25,7 +25,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, 'client', 'dist')));
+app.use(express.static(path.join(__dirname, 'client/dist')));
 
 // API routes
 app.use("/api/user", userRoutes);
