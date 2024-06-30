@@ -13,25 +13,23 @@ mongoose.connect(process.env.MONGO)
         console.log('Connected to MongoDB');
     })
     .catch((err) => {
-        console.error(err);
+        console.error('Failed to connect to MongoDB', err);
     });
 
 const __dirname = path.resolve();
 
 const app = express();
 
-// Middleware to parse JSON and cookies
 app.use(express.json());
 app.use(cookieParser());
 
+app.use('/api/user', userRoutes);
+app.use('/api/auth', authRoutes);
+
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, 'client/dist')));
+app.use(express.static(path.join(__dirname, 'client', 'dist')));
 
-// API routes
-app.use("/api/user", userRoutes);
-app.use("/api/auth", authRoutes);
-
-// Catch-all handler to serve the React app for any route not handled by the above routes
+// Catch all handler for all other requests
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'));
 });
