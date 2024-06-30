@@ -13,7 +13,7 @@ mongoose.connect(process.env.MONGO)
         console.log('Connected to MongoDB');
     })
     .catch((err) => {
-        console.error('Failed to connect to MongoDB', err);
+        console.error(err);
     });
 
 const __dirname = path.resolve();
@@ -27,11 +27,11 @@ app.use('/api/user', userRoutes);
 app.use('/api/auth', authRoutes);
 
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, 'client', 'dist')));
+app.use(express.static(path.join(__dirname, 'auth-ui/dist')));
 
 // Catch all handler for all other requests
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'));
+    res.sendFile(path.join(__dirname, 'auth-ui', 'dist', 'index.html'));
 });
 
 // Error handling middleware
