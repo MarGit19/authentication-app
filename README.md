@@ -22,7 +22,7 @@ To get started with our Authentication App, follow these steps:
 
 ### Preview
 - Homepage
-![authentication homepage](![image](https://github.com/MarGit19/auth-ui/assets/134662796/7b66aaec-e082-4e94-81df-9f96d3a010ab)
+![authentication homepage](https://github.com/MarGit19/auth-ui/assets/134662796/7b66aaec-e082-4e94-81df-9f96d3a010ab)
 - Registration Page
 ![authentication registration page](https://github.com/MarGit19/auth-ui/assets/134662796/5843726f-bf15-40c5-963b-118436d196a8)
 - Login Page
