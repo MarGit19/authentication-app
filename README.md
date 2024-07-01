@@ -16,19 +16,9 @@ To get started with our Authentication App, follow these steps:
 - MongoDB instance (local or Atlas)
 - Firebase project setup for image upload (if applicable)
 ### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/auth-app.git
-   cd auth-app
-
-2. Install backend dependencies:
-  ```bash
-  npm install
-
-3. Install frontend dependencies:
-  ```bash
-  npm install --prefix client
+1. Clone the repositoy
+2. Install backend dependencies: npm install
+3. Install frontend dependencies: npm install --prefix auth-ui
 
 ### Preview
 - Homepage
