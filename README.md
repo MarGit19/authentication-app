@@ -12,13 +12,13 @@ This is a full-featured authentication app built using the MERN stack (MongoDB, 
 ## Getting Started
 To get started with our Authentication App, follow these steps:
 ### Prerequisites
-- Node.js and npm installed
-- MongoDB instance (local or Atlas)
-- Firebase project setup for image upload (if applicable)
+- Node.js and npm installed.
+- MongoDB instance (local or Atlas).
+- Firebase project setup for image upload (if applicable.
 ### Installation
-1. Clone the repositoy
-2. Install backend dependencies: npm install
-3. Install frontend dependencies: npm install --prefix auth-ui
+1. Clone the repositoy.
+2. Install backend dependencies: npm install.
+3. Install frontend dependencies: npm install --prefix auth-ui.
 
 ### Preview
 - Homepage
